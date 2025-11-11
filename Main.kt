@@ -28,6 +28,11 @@ fun checkHP()
         println("Победа игрока!")
         System.exit(1)
     }
+    if (enemy.hp < 0 && player.playersHp < 0)
+    {
+        println("Никто не победил! Все умерли.")
+        System.exit(1)
+    }
 
 }
 fun useAbility(){
